@@ -75,7 +75,7 @@ router.post("/login", async (req, res) => {
         res.json({
             message: "Login successful",
             token
-        });
+        , template: user.template });
 
     } catch (error) {
         console.error(error);
